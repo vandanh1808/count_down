@@ -103,9 +103,9 @@ export default function CountdownApp() {
 	const [mounted, setMounted] = useState(false);
 	useEffect(() => setMounted(true), []);
 
-	// Mặc định: 20/10/2025 08:00 (UTC+7) -> 01:00 UTC
+	// Mặc định: 22/10/2025 08:00 (UTC+7) -> 01:00 UTC
 	const defaultTarget = useMemo(
-		() => new Date(Date.UTC(2025, 9, 20, 1, 0, 0)),
+		() => new Date(Date.UTC(2025, 9, 22, 1, 0, 0)),
 		[]
 	);
 	const [now, setNow] = useState<Date>(new Date());
